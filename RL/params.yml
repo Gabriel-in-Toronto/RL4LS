@@ -1,0 +1,39 @@
+# Copyright (c) 2021, Programmable digital systems group, University of Toronto
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree. 
+
+# ======================================================================
+# This file holds parameters for running a RL agent for training and
+# inference. It sets up the RL environment along with the logic synthesis
+# environment to train the RL agent. 
+
+# change this to the abc binary path if the command is not recognized system-wide
+abc_binary: /home/path/to/abc
+ccirc_binary: /home/path/to/ccirc/ccirc
+
+# path of the design file in one of the accepted formats by ABC
+design_file: /home/path/to/benchmarks/sin.v
+
+# FPGA mapping - exlusive with the above
+fpga_mapping:
+  lut_inputs: 6
+
+# add more optimization to the toolbox
+optimizations:
+  - rewrite
+  - rewrite -z
+  - refactor
+  - refactor -z
+  - resub
+  - resub -z
+  - balance
+
+# the directory to hold the playground an agent uses to practice
+playground_dir: playground
+
+# agent training parameters
+episodes: 100
+iterations: 25
+model_dir: /tmp/brain/model.ckpt   # must be absolute path
