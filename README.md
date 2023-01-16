@@ -10,6 +10,7 @@ Logic synthesis involves a rich set of optimization algorithms applied in a spec
 vs. the conventional approach (resyn2). In addition to circuit-by-circuit training and inference, we also train an RL agent on multiple circuits, and then apply the agent to optimize: 
 1) the same set of circuits on which it was trained
 2) an alternative set of “unseen” circuits. 
+
 In both scenarios, we observe that the RL agent produces higher-quality implementations than the conventional approach. This shows that the RL agent is able to generalize, and perform beneficial logic synthesis optimizations across a variety of circuits.
 
 # Pre-requisite
