@@ -1,6 +1,3 @@
-[submodule "abc"]
-	path = abc
-	url = git@github.com:berkeley-abc/abc.git
 [submodule "submodules/abc"]
 	path = submodules/abc
 	url = git@github.com:berkeley-abc/abc.git

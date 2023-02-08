@@ -15,3 +15,7 @@ In both scenarios, we observe that the RL agent produces higher-quality implemen
 
 # Pre-requisite
 [abc](https://github.com/berkeley-abc/abc),[Stable-baseline3](https://github.com/DLR-RM/stable-baselines3),[Ccirc](https://www.eecg.toronto.edu/~jayar/software/Cgen/Cgen.html)
+
+# Installation
+1. Recursively clone this repo and its submodules: git clone --recurse-submodules git@github.com:Gabriel-in-Toronto/RL4LS.git
+2. Go to submodules/abc and install the logic synthesis tool [abc](https://github.com/berkeley-abc/abc)
