@@ -19,7 +19,7 @@ In both scenarios, we observe that the RL agent produces higher-quality implemen
 # Installation
 1. Recursively clone this repo and its submodules: git clone --recurse-submodules git@github.com:Gabriel-in-Toronto/RL4LS.git
 2. Go to submodules/abc and install the logic synthesis tool [abc](https://github.com/berkeley-abc/abc)
-3. Please email me (guanglei.zhou@mail.utoronto.ca) to obtain our ccirc implementation. We modified and implemented the reconvergence feature in the ccirc release. After you obtained the copy, type "make" and build the binary. 
+3. Please email me (guanglei.zhou@duke.edu) to obtain our ccirc implementation. We modified and implemented the reconvergence feature in the ccirc release. After you obtained the copy, type "make" and build the binary. 
 4. Install the Stable Baselines3 package and you are ready to go!
 ```
 pip install stable-baselines3[extra]
